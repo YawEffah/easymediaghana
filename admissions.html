@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="fa icon" type="short icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Easy Media Institute</title>
+
+	<style type="text/css">
+		
+		main{
+			height: auto;
+			padding: 20px;
+			padding-top: 100px;
+		}
+
+		main h1{
+			font-size: 20px;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+
+		main ul{
+			margin: 20px 0;
+		}
+		
+		main ul li{
+			margin: 10px 10px 10px 30px;
+		}
+
+		.apply-icon{
+			top: 47px;
+			right: 10px;
+			width: 70px;
+			z-index: 100555;
+			position: fixed;
+			cursor: pointer;
+			
+		}
+
+
+		@media(min-width: 600px){
+			
+			main{
+				padding: 30px;
+				padding-top: 120px;
+				background: white;
+			}
+
+			.apply-icon{
+				top: 25px;
+				width: 80px;
+			}
+
+		}
+
+		@media(min-width: 1000px){
+
+			main{
+				padding: 50px;
+				padding-top: 150px;
+				box-shadow: 1px 2px 8px #ccc;
+			}
+			
+
+
+		}
+	</style>
+
+
+</head>
+<body>
+
+<div class="loader-container">
+	<img src="images/loading-icon.gif" width="150" height="150">
+	<h2>Loading...</h2>
+</div>
+
+	<div id="container">
+
+		<!--Start of the mobile navigation-->
+		<div id="mobile-nav-wrapper">
+
+			<div class="header">
+				<i class="fa fa-bars menu" onclick="opennav()" title="Menu"></i>
+			</div>
+
+			<nav id="nav" class="mobile-nav">
+				<span class="close-btn" onclick="closenva()">&times;</span>
+				<ul>
+					<a href="index.html"><li onclick="closenva()" class="active">Home</li></a>
+					<a href="about.html"><li onclick="closenva()">About</li></a>
+					<a href="#"><li onclick="closenva()">Admissions</li></a>
+					<a href="gallery.html"><li onclick="closenva()">Gallery</li></a>
+					<a href="#"><li onclick="openContact()">Contact</li></a>
+				</ul>
+			</nav>
+		</div>
+		<!--End of the navigation-->
+
+		<!--Start of the desktop navigation-->
+			<div id="desktop-nav-wrapper">
+				<nav class="desktop-nav"  >
+					
+					<a href="index.html">
+						<div class="Logo">
+							<img src="images/logo.png" class="logo">
+						</div>
+					</a>
+
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#" class="active2">Admissions</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li onclick="openContact()"><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		<!--End of the desktop navigation-->
+
+		
+		<!--Start of the main content-->
+			<main class="main-content" id="main" onclick="closenva()">
+				
+				<section class="academic-programme-wrap" id="courses">
+					<h1>Academic Programmes</h1>
+						<ul>
+							<h2>3 Months (Certificate)</h2>
+							<li>Radio Presentation</li>
+							<li>Sports Presentation (Commentary & Analysis) </li>
+							<li>Disc Jockeying (DJ) </li>
+						</ul>
+
+						<ul>
+							<h2>6 Months (Diploma) </h2>
+							<li>Introduction to Journalism</li>
+							<li>Broadcast Journalism </li>
+							<li>News Casting (Akan And English) </li>
+							<li>Disc Jockeying (DJ) </li>
+						</ul>
+
+						<ul>
+							<h2>I.C.T. Training </h2>
+							<li>Graphic Designing </li>
+							<li>Web Designing </li>
+							<li>Hardware And Networking </li>
+						</ul>
+
+				</section>
+
+				<hr>
+
+				<section class="entry-requirements-wrap" id="requirements">
+						<h1>Entry Requirements</h1>
+						<ul>
+							<li>Applicant must be more than 17 years and above </li>
+							<li>Applicant must be a JHS/SHS/ Tertiary graduate </li>
+							<li>Applicant must be able to read, write properly and understand </li>
+						</ul>
+
+				</section>
+
+				<hr>
+
+				<section class="app-guidlines-wrap" id="guidlines">
+					
+					<h1>How to apply</h1>
+						<ul>
+							<li>
+								Purchase the E-voucher from the following sources;
+								<ol>
+									<li>School's main office</li>
+									<li>Akyea FM</li>
+								</ol>
+							</li>
+							<li>Visit: <a href="#">apply.easymediaghana.com</a> with the e-voucher purchased</li>
+							<li>fill the form with the required information and submit</li>
+						</ul>
+
+					
+				</section>
+	
+			</main>
+		<!--End of the main content-->
+
+			<!--Contact Overlay-->
+			<section class="contact-overlay" id="contact-overlay">
+				<div class="contact-wrap">
+					<span class="close-btn" onclick="closeContact(), closenva()">&times;</span>
+					
+					<div>
+						<h3>Find us on Google Map</h3><hr>
+						<div class="map-wrapper" style="height: 100%; width: 100%;">
+							<a href="https://www.google.com.gh/maps/place/Easy+Media+And+I.T+Institute/@7.5602563,-1.7091908,17z/data=!4m5!3m4!1s0xfda65eb027643b1:0xf1bbecb1474368cc!8m2!3d7.560251!4d-1.7070021" target="_blank">
+							<img src="images/map.png">
+							</a>
+						</div>	
+					</div>
+
+					<div>
+						<h3>HOTLINES</h3><hr>
+						<p>
+						    <a href="tel: +233542241517">
+						     <i class="fa fa-phone phone"></i>  +233 (0) 542241517 </a>
+						 </p>
+						    
+						<p>
+						    <a href="tel:+233500724626">
+						   <i class="fa fa-phone phone"></i>  +233 (0) 500724626</a>
+											    
+						<p>
+							<a href="https://wa.me/+233542241517"><i class="fab fa-whatsapp whatsapp"></i> +233542241517 </a>
+						</p>
+
+						<p>
+						     <a href="mailto:oseiwmichael@gmail.com"><i class="fa fa-envelope"></i> oseiwmichael@gmail.com </a>
+						</p>
+						<h3>ADDRESS</h3><hr>
+						<p>
+							Nkoranza, Bono East<br>
+							Opposite Pentecost Church<br>
+							Ghana-West Africa
+						</p>
+						
+					</div>
+				</div>
+			</section>
+			<!--End of Contact Overlay-->
+
+			<a href="https://wa.me/+233542241517" target="_blank" title="Chat us on WhatsApp">
+				<div class="floating-whatsapp">
+					<img src="images/whatsapp-icon.gif">
+				</div>
+			</a>
+
+			<a href="#"><img src="images/apply-icon.gif" class="apply-icon"></a>
+
+
+		<!-- Start of the footer-->
+		<footer onclick="closenva()">
+			<div class="footer-content">
+				<p>&copy EasyMedia 2021. All Rights Reserved</p>
+				<hr>
+				<p>
+					<a href="tel:+233542241517" class="f-icon phone" target="_blank"><i class="fa fa-phone"></i></a>
+					<a href="https://wa.me/+233542241517" class="f-icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					<a href="#" class="f-icon insta"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/Easymediaanditinstitute/" class="f-icon facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="#" class="f-icon twitter"><i class="fab fa-twitter"></i></a>
+				</p><br><br>
+				<small>
+					Powered by: Yaw Effah
+				</small>
+			</div>
+				
+		</footer>
+		<!--End of the footer-->
+
+	</div>
+
+</body>
+</html>
