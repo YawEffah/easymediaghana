@@ -1,0 +1,343 @@
+*{
+			margin: 0; 
+			padding: 0; 
+			box-sizing: 
+			border-box;
+			font-size: 18;
+			list-style: none;
+			font-family: tahoma;
+			text-decoration: none;
+			outline: none;
+			scroll-behavior: smooth;
+		 }
+
+		 body{
+		 	height: 100vh;
+		 	width: 100%;
+		 	display: flex;
+		 	align-items: center;
+		 	flex-direction: column;
+		 	justify-content: center;
+		 	background: #ccc;
+		 }
+
+
+
+		 header{
+		 	width: 95%;
+		 	background: white;
+		 	height: 60px;
+		 	padding: 15px 25px;
+		 	margin-bottom: 25px;
+		 	display: flex;
+		 	border-radius: 10px; 
+		 	border: none;
+		 	align-items: center;
+		 	justify-content: space-between;
+		 }
+
+		 header h3{
+		 	font-size: 16px;
+		 }
+
+		 .logo{
+		 	width: 60px;
+		 }
+
+		 .logout-btn{
+		 	cursor: pointer;
+		 }
+
+		 .logout-btn .fa{
+		 	color: black;
+		 	font-size: 20px;
+		 	font-weight: bold;
+		 }
+
+		 .container{
+		 	height: 750px;
+		 	width: 95%;
+		 	padding: 10px;
+		 	overflow-y: scroll;
+		 	overflow-x: hidden;
+		  	background: white;
+		 	border-radius: 10px;
+		 	position: relative;
+		 	box-shadow: 0 2px 16px #333;
+		 	grid-template-columns:1fr;
+		 }
+
+		 fieldset{
+		 	width: 100%;
+		 	padding: 30px;
+		 	border-radius: 10px;
+		 	border: 1px solid #ccc;
+		 	margin: 10px 0 80px 0;
+		 }
+
+		 fieldset legend{
+		 	text-transform: uppercase;
+		 	font-weight: bolder;
+		 }
+
+		 .side-bar{
+		 	display: none;
+		 }
+
+		 main{
+		 	position: absolute;
+		 	right: 0;
+		 	width: 100%;
+		 	padding: 0 auto;
+		 	display: flex;
+		 	align-items: flex-start;
+		 	justify-content: center;
+		 }
+
+		 main .form-control{
+		 	display: flex;
+		 	align-items: center;
+		 }
+
+		 .fa{
+		 	font-size: 16px;
+		 }
+
+		 main input{
+		 	width: 250px;
+		 	margin-top: 5px;
+		 	border-bottom-right-radius: 5px;
+		 	border-top-right-radius: 5px;
+		 	border: 1px solid #ccc;
+		 }
+
+		 main .icons{
+		 	margin-top: 5px;
+		 	background: #ccc;
+		 	padding: 12px;
+		 	border-bottom-left-radius: 5px;
+		 	border-top-left-radius: 5px;
+		 }
+
+		 main .text-box{
+		 	padding: 12.5px 20px;
+		 	border: 1px solid #ccc;
+		 }
+
+		 main select{
+		 	border: 1px solid #ccc;
+		 	border-radius: 5px;
+		 }
+
+		 main .gender-btn{
+		 	width: 80px;
+		 	padding: 15px;
+		 }
+
+		 .btn-wrap{
+		 	width: 90%;
+		 	display: flex;
+		 	align-items: center;
+		 }
+
+		 .btn-wrap .btn{
+		 	color: white;
+		 	padding: 10px 15px;
+		 	font-size: 15px;
+		 	cursor: pointer;
+		 	font-family: arial;
+		 	font-weight: bolder;
+		 	border: none;
+		 	margin: 10px;
+		 	opacity: 0.9;
+		 	border-radius: 10px;
+		 	box-shadow: 0 2px 8px #ccc;
+		 	background: #031d39;
+		 }
+
+		 .submit-btn{
+		 	width: 150px;
+		 	background: darkgreen;
+		 }
+
+		
+		 .btn-wrap .btn:hover{
+		 	opacity: 1;
+	}
+
+	@media(min-width: 800px){
+		
+		 header{
+		 	width: 780px;
+		 	background: white;
+		 	display: flex;
+		 	align-items: center;
+		 	justify-content: space-between;
+		 }
+
+		 header h3{
+		 	font-size: 18px;
+		 }
+
+		.container{
+		 	height: 700px;
+		 	width: 780px;
+		 	padding: 0;
+		 	display: grid;
+		 	grid-gap: 50px;
+		 	background: white;
+		 	border-radius: 10px;
+		 	overflow-y: scroll;
+		 	position: relative;
+		 	box-shadow: 0 2px 16px #333;
+		 	grid-template-columns: 1fr 1fr;
+		 }
+
+		 fieldset{
+		 	width: 460px;
+		 	padding: 30px 50px;
+		 	border-radius: 10px;
+		 	border: 1px solid #ccc;
+		 	margin: 10px 0 80px 0;
+		 }
+
+		 fieldset legend{
+		 	text-transform: uppercase;
+		 	font-weight: bolder;
+		 }
+
+		 .side-bar{
+		 	display: block;
+		 	width: 200px;
+		 	height: 700px;
+		 	position: fixed;
+		 	z-index: 22222;
+		 	background: lightgrey;
+		 }
+
+		 .side-bar .user-img{
+		 	width: 100%;
+		 	height: auto;
+		 	cursor: pointer;
+		 }
+
+		 .user-img img{
+		 	width: 100%;
+		 }
+
+		 .side-bar ul{
+		 	margin: 20px 0;
+		 }
+
+		 .side-bar a{
+		 	display: flex;
+		 	align-items: center;
+		 	position: relative;
+		 }
+
+		 .side-bar .fa{
+		 	color: black;
+		 	left: 9px;
+		 	position: absolute;
+		 }
+
+		 .side-bar ul  a li{
+		 	width: 100%;
+		 	color: black;
+		 }
+
+		 .side-bar ul li, h2{
+		 	padding: 15px 20px;
+		 	background: #ccc;
+		 	cursor: pointer;
+		 	border-left: 35px solid red;
+		 	border-bottom: 1.5px dashed white;
+		 }
+
+		 .side-bar h2{
+		 	margin: 10px 0;
+		 	background: white;
+		 }
+
+		 .side-bar ul li:hover{
+		 	background: #d3bf78;
+		 }
+
+		 main{
+		 	position: absolute;
+		 	right: 0;
+		 	width: 100%;
+		 	padding: 30px 20px 20px 200px;
+		 	display: flex;
+		 	align-items: flex-start;
+		 	justify-content: center;
+		 }
+
+		 main .form-control{
+		 	display: flex;
+		 	align-items: center;
+		 }
+
+		 .fa{
+		 	font-size: 16px;
+		 }
+
+		 main input{
+		 	width: 300px;
+		 	margin-top: 5px;
+		 	border-bottom-right-radius: 5px;
+		 	border-top-right-radius: 5px;
+		 	border: 1px solid #ccc;
+		 }
+
+		 main .icons{
+		 	margin-top: 5px;
+		 	background: #ccc;
+		 	padding: 12px;
+		 	border-bottom-left-radius: 5px;
+		 	border-top-left-radius: 5px;
+		 }
+
+		 main .text-box{
+		 	width: 100%;
+		 	padding: 12.5px 20px;
+		 	border: 1px solid #ccc;
+		 }
+
+		 main select{
+		 	border: 1px solid #ccc;
+		 	border-radius: 5px;
+		 }
+
+		 main .gender-btn{
+		 	width: 80px;
+		 	padding: 15px;
+		 }
+
+		 
+	}
+
+
+	@media(min-width: 1000px){
+
+		header{
+			width: 860px;
+		}
+		
+		.container{
+		 	width: 860px;
+		 }
+
+		 .side-bar{
+		 	width: 250px;
+		 }
+
+		 main{
+		 	padding: 30px 20px 20px 290px;
+		 }
+		 
+		 
+	}
+
+
+		 
