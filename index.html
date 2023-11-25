@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="fa icon" type="short icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Easy Media Institute</title>
+</head>
+<body>
+
+<div class="loader-container">
+	<img src="images/loading-icon.gif" width="150" height="150">
+	<h2>Loading...</h2>
+</div>
+
+	<div id="container">
+
+		<!--Start of the mobile navigation-->
+		<div id="mobile-nav-wrapper">
+
+			<div class="header">
+				<i class="fa fa-bars menu" onclick="opennav()" title="Menu"></i>
+			</div>
+
+			<nav id="nav" class="mobile-nav">
+				<span class="close-btn" onclick="closenva()">&times;</span>
+				<ul>
+					<a href="#"><li onclick="closenva()" class="active">Home</li></a>
+					<a href="#About"><li onclick="closenva()">About</li></a>
+					<a href="admissions.html"><li onclick="closenva()">Admissions</li></a>
+					<a href="gallery.html"><li onclick="closenva()">Gallery</li></a>
+					<a href="#"><li onclick="openContact()">Contact</li></a>
+				</ul>
+			</nav>
+		</div>
+		<!--End of the navigation-->
+
+		<!--Start of the desktop navigation-->
+			<div id="desktop-nav-wrapper">
+				<nav class="desktop-nav"  >
+					
+					<a href="#">
+						<div class="Logo">
+							<img src="images/logo.png" class="logo">
+						</div>
+					</a>
+
+					<ul>
+						<li><a href="#" class="active2">Home</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="admissions.html">Admissions</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li onclick="openContact()"><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		<!--End of the desktop navigation-->
+
+			
+			<!--Start of the Banner or the landing page-->
+			<div class="banner" id="banner" onclick="closenva()">
+				<figure class="slider">
+					<div class="slide-images"><img src="images/slide-img-1.jpg"></div>
+					<div class="slide-images"><img src="images/slide-img-2.jpg"></div>
+					<div class="slide-images"><img src="images/slide-img-3.jpg"></div>
+					<div class="slide-images"><img src="images/slide-img-4.jpg"></div>
+					<div class="slide-images"><img src="images/slide-img-1.jpg"></div>
+				</figure>
+			</div>
+			<!--End of the Banner or the landing page-->
+
+
+			<div class="greeting-text-wrapper">
+				<section class="greeting-text">
+					<h2>EASY MEDIA INSTITUTE</h2>
+					<h5><marquee>We Train Professionals</marquee></h5>
+				</section>
+			</div>
+
+				<div class="Quick-links-wrapper" id="Q-links" onclick="closenva()">
+					<div class="Quick-links">
+						<div class="Ql-images" title="Click to for more">
+							<img src="images/courses-icon.jpg">
+							<a href="admissions.html"><span class="caption">Our Courses</span></a>
+						</div>
+						<p>
+							Check out Our Academic Programmes and apply for your choice
+						</p>
+					</div>
+
+					<div class="Quick-links">
+						<div class="Ql-images" title="Click to for more">
+							<img src="images/apply-icon.jpg">
+							<a href="appform"><span class="caption">Apply Now!</span></a>
+						</div>
+						<p>
+							Acquire and voucher and Apply Now!
+						</p>
+					</div>
+
+					<div class="Quick-links">
+						<div class="Ql-images" title="Click to for more">
+							<img src="images/requirements-icon.jpg">
+							<a href="admissions.html"><span class="caption">Entry Requirements</span></a>
+						</div>
+						<p>
+							Go through our cut-off points to see if you qualify for application
+						</p>
+					</div>
+
+				</div>
+
+		<section id="about-container" onclick="closenva()">
+			<!--Start of the main content-->
+				<main class="main-content" id="main">
+					<div class="About-wrapper" id="About"> 
+						<div class="About-us">
+							<h2>About us</h2><br>
+							<p>
+								Easy Media and I.T. Institute is a registered media school in Bono East Region that seek to train young men and women with the burning desire to work with the broadcasting media.  <br>
+								The school was established in 2011. We offer three (3) and six (6) months course duration. (Certificate and Diploma). 
+							</p>
+
+							<p>
+								The management and the staff of the Company is still working harder in order to contribute to the migration to the digital world in the country (Ghana) and in Africa at large. 
+
+							</p><br>
+
+							<a href="about.html" class="RM-button">
+								Read more
+							</a><br><br><br>
+						</div>
+					</div>
+		
+				</main>
+			<!--End of the main content-->
+
+			<!--Contact Overlay-->
+			<section class="contact-overlay" id="contact-overlay">
+				<div class="contact-wrap">
+					<span class="close-btn" onclick="closeContact(), closenva()">&times;</span>
+					
+					<div>
+						<h3>Find us on Google Map</h3><hr>
+						<div class="map-wrapper" style="height: 100%; width: 100%;">
+							<a href="https://www.google.com.gh/maps/place/Easy+Media+And+I.T+Institute/@7.5602563,-1.7091908,17z/data=!4m5!3m4!1s0xfda65eb027643b1:0xf1bbecb1474368cc!8m2!3d7.560251!4d-1.7070021" target="_blank">
+							<img src="images/map.png">
+							</a>
+						</div>	
+					</div>
+
+					<div>
+						<h3>HOTLINES</h3><hr>
+						<p>
+						    <a href="tel: +233542241517">
+						     <i class="fa fa-phone phone"></i>  +233 (0) 542241517 </a>
+						 </p>
+						    
+						<p>
+						    <a href="tel:+233500724626">
+						   <i class="fa fa-phone phone"></i>  +233 (0) 500724626</a>
+											    
+						<p>
+							<a href="https://wa.me/+233542241517"><i class="fab fa-whatsapp whatsapp"></i> +233 (0) 542241517 </a>
+						</p>
+
+						<p>
+						     <a href="mailto:oseiwmichael@gmail.com"><i class="fa fa-envelope"></i> oseiwmichael@gmail.com </a>
+						</p>
+						<h3>ADDRESS</h3><hr>
+						<p>
+							Nkoranza, Bono East<br>
+							Opposite Pentecost Church<br>
+							Ghana-West Africa
+						</p>
+						
+					</div>
+				</div>
+			</section>
+			<!--End of Contact Overlay-->
+
+					<div class="location-wrap" id="location">
+						<a href="https://www.google.com.gh/maps/place/Easy+Media+And+I.T+Institute/@7.5602563,-1.7091908,17z/	data=!4m5!3m4!1s0xfda65eb027643b1:0xf1bbecb1474368cc!8m2!3d7.560251!4d-1.7070021" target="_blank">
+							<img src="images/location-map.png" class="location-map">
+						</a>						
+					</div>
+			
+			<a href="https://wa.me/+233542241517" target="_blank" title="Chat us on WhatsApp">
+				<div class="floating-whatsapp">
+					<img src="images/whatsapp-icon.gif">
+				</div>
+			</a>
+
+		</section>
+
+
+
+		<!-- Start of the footer-->
+		<footer onclick="closenva()">
+			<div class="footer-content">
+				<p>&copy EasyMedia 2021. All Rights Reserved</p>
+				<hr>
+				<p>
+					<a href="tel:+233542241517" class="f-icon phone" target="_blank"><i class="fa fa-phone"></i></a>
+					<a href="https://wa.me/+233542241517" class="f-icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					<a href="#" class="f-icon insta"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/Easymediaanditinstitute/" class="f-icon facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="#" class="f-icon twitter"><i class="fab fa-twitter"></i></a>
+				</p><br><br>
+				<small>
+					Powered by: Yaw Effah
+				</small>	
+				</div>
+				
+		</footer>
+		<!--End of the footer-->
+
+	</div>
+</body>
+</html>
